@@ -18,6 +18,11 @@ const buildjs = async path => {
     loader: {
       '.vs': 'text',
       '.fs': 'text',
+      '.vert': 'text',
+      '.frag': 'text',
+      '.glsl': 'text',
+
+      // Load fonts as file hashes.
       '.eot': 'file',
       '.woff': 'file',
       '.ttf': 'file'
