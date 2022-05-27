@@ -13,6 +13,9 @@
   "devDependencies": {
     "chokidar": "^3.5.1",
     "esbuild": "^0.9.2",
-    "live-server": "^1.2.1"
+    "live-server": "^1.1.0"
+  },
+  "dependencies": {
+    "regl": "^2.1.0"
   }
 }
