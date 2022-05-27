@@ -9,9 +9,9 @@ const buildjs = async path => {
     entryPoints: ['src/main.js'],
     bundle: true,
     plugins:[
-      glslify({
-        compress: true
-      })
+      // glslify({
+      //   compress: true
+      // })
     ],
 
     minify: false,
