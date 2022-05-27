@@ -1,6 +1,6 @@
-const chokidar = require('chokidar');
-const liveserver = require('live-server');
-const {buildjs} = require('./buildtools.js')
+import chokidar from 'chokidar';
+import liveserver from 'live-server';
+import {buildjs} from './buildtools.mjs';
 
 
 let src_watcher = chokidar.watch('src/**/*.*', {

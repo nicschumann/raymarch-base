@@ -1,15 +1,18 @@
-const fs = require('fs');
-const path = require('path');
-const util = require('util');
-const esbuild = require('esbuild');
-
+import { build } from 'esbuild';
+import { glslify } from 'esbuild-plugin-glslify';
 
 const buildjs = async path => {
   console.log('changed', path);
   let s = Date.now();
-  esbuild.build({
+  
+  build({
     entryPoints: ['src/main.js'],
     bundle: true,
+    plugins:[
+      glslify({
+        compress: true
+      })
+    ],
 
     minify: false,
     sourcemap: true,
@@ -44,6 +47,4 @@ const buildjs = async path => {
 };
 
 
-module.exports = {
-  buildjs
-}
+export { buildjs };

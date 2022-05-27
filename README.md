@@ -1,6 +1,6 @@
-# Esbuild Base
+# Raymarch Base
 
-This is a base repository for making simple, single-page javascript applications. It uses `esbuild` as a module bundler, and tries to leave room for expanded tooling in its build process (I tend to customize the asset pipeline on a per-project basis).
+This is a base repository for making raymarch applications. It uses `esbuild` as a module bundler, and tries to leave room for expanded tooling in its build process (I tend to customize the asset pipeline on a per-project basis).
 
 This base repo was structured after doing two, experimental, single-page website projects in the spring of 2021: an [interactive fluid simulator](https://github.com/nicschumann/fairly-fast-fluids), and [an interactive story](https://github.com/nicschumann/ray-trip). I learned a bit about how to segment the project, and how not to.
 

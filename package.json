@@ -1,11 +1,11 @@
 {
-  "name": "esbuild-base",
+  "name": "raymarch-base",
   "version": "1.0.0",
-  "description": "A base repository for esbuild-compiled js projects",
+  "description": "A base repository for working on raymarched rendering.",
   "main": "src/main.js",
   "scripts": {
-    "build": "node ./bld/build.js",
-    "serve": "node ./bld/serve.js",
+    "build": "node ./bld/build.mjs",
+    "serve": "node ./bld/serve.mjs",
     "deploy-gh-pages": "./bld/deploy-gh-pages.sh"
   },
   "author": "Nic Schumann <nic@nicschumann.co>",
@@ -16,6 +16,7 @@
     "live-server": "^1.1.0"
   },
   "dependencies": {
+    "esbuild-plugin-glslify": "^1.0.1",
     "regl": "^2.1.0"
   }
 }
